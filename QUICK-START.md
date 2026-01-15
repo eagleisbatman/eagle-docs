@@ -275,35 +275,122 @@ Primary color: #1976D2
 
 ---
 
-### Content Pipeline Documentation
+### Technical Spec
 
 ```
-Create content pipeline documentation for [your automated content system].
+Create a technical spec for [your feature/system].
 
-Pipeline stages:
-1. [Stage]: [description]
-2. [Stage]: [description]
-3. [Stage]: [description]
+Context:
+- Problem: [what problem are you solving]
+- Scope: [what's included]
+- Constraints: [technical constraints]
 
-Data sources: [list APIs/services]
-Output format: [audio/video/text/etc.]
+Include: [architecture diagram / API design / data model]
 Theme: [brutalist/material/cupertino/minimal]
 ```
 
 **Example:**
 ```
-Create content pipeline documentation for an automated podcast system.
+Create a technical spec for a real-time notification system.
 
-Pipeline stages:
-1. Data collection: Pull news from RSS feeds and APIs
-2. Script generation: Use GPT-4 to write podcast scripts
-3. Voice synthesis: Convert scripts to audio via ElevenLabs
-4. Post-processing: Add intro/outro, normalize audio
-5. Distribution: Upload to Spotify, Apple Podcasts
+Context:
+- Problem: Users miss important updates because we only have email notifications
+- Scope: Web push, mobile push, and in-app notifications
+- Constraints: Must work offline, max 100ms delivery latency
 
-Data sources: NewsAPI, Weather API, Stock market API
-Output format: MP3 audio files (15-20 minutes each)
+Include: Architecture diagram, API design, data model
 Theme: Brutalist
+```
+
+---
+
+### User Guide
+
+```
+Create a user guide for [your product/feature].
+
+Sections needed:
+- [Section 1]
+- [Section 2]
+- [Section 3]
+
+Audience: [who will read this]
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create a user guide for a project management app.
+
+Sections needed:
+- Getting started (account setup, first project)
+- Managing tasks (create, assign, track)
+- Team collaboration (invites, comments, mentions)
+- Integrations (Slack, GitHub, Calendar)
+
+Audience: Non-technical team leads and project managers
+Theme: Material 3
+Primary color: #1976D2
+```
+
+---
+
+### Release Notes
+
+```
+Create release notes for [product] version [X.X.X].
+
+Changes:
+- New: [feature 1], [feature 2]
+- Improved: [enhancement 1]
+- Fixed: [bug 1], [bug 2]
+- Breaking: [breaking change if any]
+
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create release notes for TaskApp version 2.5.0.
+
+Changes:
+- New: Dark mode support, keyboard shortcuts, bulk task editing
+- Improved: Search now 3x faster, better mobile responsiveness
+- Fixed: Calendar sync issues, notification delays on Android
+- Breaking: Dropped support for iOS 14
+
+Theme: Modern Minimal
+```
+
+---
+
+### Onboarding Documentation
+
+```
+Create onboarding documentation for [team/company].
+
+Include:
+- [Section 1]
+- [Section 2]
+- [Section 3]
+
+Audience: [new engineers / new employees / contractors]
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create onboarding documentation for new backend engineers.
+
+Include:
+- Day 1 checklist (accounts, hardware, introductions)
+- Development environment setup (Docker, IDE, local DB)
+- Codebase overview (architecture, key services, conventions)
+- First week goals (first PR, shadow on-call, meet stakeholders)
+
+Audience: New backend engineers joining the platform team
+Theme: Material 3
+Primary color: #1976D2
 ```
 
 ---

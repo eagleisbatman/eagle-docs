@@ -1,0 +1,34 @@
+{
+  "name": "eagle-docs",
+  "version": "2.0.0",
+  "displayName": "Eagle Docs",
+  "description": "Professional documentation templates for modern teams. Generate PRDs, wireframes, API docs, database schemas, and more with customizable themes.",
+  "author": {
+    "name": "Gautam Mandewalker",
+    "url": "https://github.com/eagleisbatman"
+  },
+  "repository": "https://github.com/eagleisbatman/eagle-docs",
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "prd",
+    "wireframes",
+    "api-docs",
+    "database-schema",
+    "templates",
+    "technical-writing"
+  ],
+  "skills": [
+    "prd-design",
+    "wireframe-design",
+    "database-schema-design",
+    "api-spec-design",
+    "infrastructure-design",
+    "analytics-design",
+    "launch-playbook-design",
+    "technical-spec-design",
+    "user-guide-design",
+    "release-notes-design",
+    "onboarding-docs-design"
+  ]
+}

@@ -2,7 +2,7 @@
 
 **Professional documentation templates for modern teams.**
 
-Eagle Docs is a collection of battle-tested documentation skills that generate beautiful, consistent HTML documents. Built for Claude Code, these skills help product managers, engineers, designers, and technical writers create professional documentation in minutes, not hours.
+Eagle Docs is a Claude Code plugin that generates beautiful, consistent HTML documents. Built for product managers, engineers, designers, and technical writers — create professional documentation in minutes, not hours.
 
 ---
 
@@ -10,9 +10,35 @@ Eagle Docs is a collection of battle-tested documentation skills that generate b
 
 - **4 Design Themes** — Brutalist, Material 3, Cupertino, Modern Minimal
 - **Custom Brand Colors** — Use your own color palette
-- **8 Document Types** — PRDs, wireframes, API docs, database schemas, and more
+- **11 Document Types** — PRDs, wireframes, API docs, technical specs, and more
 - **Self-Contained HTML** — No build step, open in any browser
-- **One Section Per Viewport** — Clean, scroll-based navigation
+- **Marketplace Ready** — Install via Claude Code plugin system
+
+---
+
+## Installation
+
+### Via Claude Code Marketplace (Recommended)
+
+```bash
+# Add the marketplace
+/plugin marketplace add eagleisbatman/eagle-docs
+
+# Install the plugin
+/plugin install eagle-docs@eagleisbatman
+```
+
+### Manual Installation
+
+Clone into your Claude Code skills directory:
+
+```bash
+# User-level (available in all projects)
+git clone https://github.com/eagleisbatman/eagle-docs.git ~/.claude/skills/eagle-docs
+
+# Or project-level (team sharing)
+git clone https://github.com/eagleisbatman/eagle-docs.git .claude/skills/eagle-docs
+```
 
 ---
 
@@ -20,7 +46,7 @@ Eagle Docs is a collection of battle-tested documentation skills that generate b
 
 **See [QUICK-START.md](./QUICK-START.md) for copy-paste prompts for each document type.**
 
-### Example Prompt
+### Example
 
 ```
 Create a PRD for a habit tracking mobile app.
@@ -35,70 +61,55 @@ Primary color: #5856D6
 
 ---
 
-## Installation
-
-### Option 1: Project-Level (Recommended for Teams)
-
-Clone into your project's `.claude/skills/` directory:
-
-```bash
-git clone https://github.com/eagleisbatman/eagle-docs.git .claude/skills/eagle-docs
-```
-
-Skills will be automatically discovered for this project.
-
-### Option 2: User-Level (Personal Use)
-
-Clone into your global Claude Code skills directory:
-
-```bash
-git clone https://github.com/eagleisbatman/eagle-docs.git ~/.claude/skills/eagle-docs
-```
-
-Skills will be available across all your projects.
-
----
-
 ## Configuration (Optional)
 
-Create `.eagle-docs.yaml` in your project root to set default preferences:
+Create `.eagle-docs.yaml` in your project root:
 
 ```yaml
-# .eagle-docs.yaml
 theme: material  # brutalist | material | cupertino | minimal
 
 colors:
-  primary: "#2563EB"      # Main brand color
-  secondary: "#1E293B"    # Supporting color
-  accent: "#10B981"       # Highlights, CTAs
-  background: "#FFFFFF"   # Page background
-  surface: "#F8FAFC"      # Card backgrounds
-  text: "#0F172A"         # Primary text
+  primary: "#2563EB"
+  secondary: "#1E293B"
+  accent: "#10B981"
 
 mode: light  # light | dark
-
-typography:
-  heading: "Inter"
-  body: "Inter"
-  mono: "JetBrains Mono"
 ```
-
-If no config file exists, you can specify preferences in your prompt or Claude will ask you.
 
 ---
 
 ## Available Skills
 
+### Product & Planning
 | Skill | Purpose | Best For |
 |-------|---------|----------|
-| **PRD Design** | Product Requirements Documents | PMs defining features, engineers understanding scope |
-| **Wireframe Design** | Low-fidelity UI mockups | Designers, PMs, engineers aligning on UI |
-| **Database Schema Design** | ERD diagrams & table definitions | Backend engineers, architects, DBAs |
-| **API Spec Design** | REST API documentation | Backend engineers, API consumers, integrators |
-| **Infrastructure Design** | Architecture & deployment docs | DevOps, SREs, platform engineers |
-| **Analytics Design** | Event tracking & KPI frameworks | Data engineers, PMs, growth teams |
-| **Content Pipeline Design** | AI content generation workflows | ML engineers, content automation teams |
-| **Launch Playbook Design** | Go-to-market & release planning | PMs, engineering leads, release managers |
+| **PRD Design** | Product Requirements Documents | PMs, engineers understanding scope |
+| **Launch Playbook Design** | Go-to-market & release planning | PMs, release managers |
+
+### Design & UI
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| **Wireframe Design** | Low-fidelity UI mockups | Designers, PMs, engineers |
+
+### Technical Documentation
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| **Technical Spec Design** | Engineering specs, system design | Engineers, architects |
+| **API Spec Design** | REST API documentation | Backend engineers, integrators |
+| **Database Schema Design** | ERD diagrams & table definitions | DBAs, backend engineers |
+| **Infrastructure Design** | Architecture & deployment docs | DevOps, SREs |
+
+### Analytics & Data
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| **Analytics Design** | Event tracking & KPI frameworks | Data engineers, growth teams |
+
+### User-Facing Documentation
+| Skill | Purpose | Best For |
+|-------|---------|----------|
+| **User Guide Design** | Help docs, tutorials, how-tos | Technical writers, PMs |
+| **Release Notes Design** | Changelogs, version history | PMs, engineers |
+| **Onboarding Docs Design** | New hire guides, setup docs | Engineering leads, HR |
 
 ---
 
@@ -118,65 +129,46 @@ Clean lines, generous whitespace, contemporary feel. Perfect for startups.
 
 ---
 
-## Who Is This For?
-
-**Everyone who writes technical documentation:**
-
-- **Product Managers** — PRDs, launch playbooks, analytics specs
-- **Software Engineers** — API docs, database schemas, infrastructure designs
-- **Designers** — Wireframes, UI specifications
-- **DevOps/SRE** — Infrastructure documentation, runbooks
-- **Technical Writers** — Consistent templates for any technical content
-- **Startup Founders** — Professional docs without hiring a documentation team
-
----
-
 ## File Structure
 
 ```
 eagle-docs/
+├── .claude-plugin/
+│   └── plugin.json              # Plugin manifest
 ├── README.md
-├── QUICK-START.md              # Copy-paste prompts
+├── QUICK-START.md               # Copy-paste prompts
 ├── shared/
-│   └── DESIGN-SYSTEM.md        # Theme specs & color system
+│   └── DESIGN-SYSTEM.md         # Theme specifications
 ├── prd-design/
-│   └── SKILL.md
 ├── wireframe-design/
-│   └── SKILL.md
 ├── database-schema-design/
-│   └── SKILL.md
 ├── api-spec-design/
-│   └── SKILL.md
 ├── infrastructure-design/
-│   └── SKILL.md
 ├── analytics-design/
-│   └── SKILL.md
-├── content-pipeline-design/
-│   └── SKILL.md
-└── launch-playbook-design/
-    └── SKILL.md
+├── launch-playbook-design/
+├── technical-spec-design/
+├── user-guide-design/
+├── release-notes-design/
+└── onboarding-docs-design/
 ```
 
 ---
 
-## Output
+## Who Is This For?
 
-All documents are generated as self-contained HTML files:
-
-```
-./outputs/[document-name].html
-```
-
-- Open directly in any browser
-- No build step required
-- Print-ready
-- Easy to share
+- **Product Managers** — PRDs, launch playbooks, analytics specs
+- **Software Engineers** — Technical specs, API docs, database schemas
+- **Designers** — Wireframes, UI specifications
+- **DevOps/SRE** — Infrastructure documentation, runbooks
+- **Technical Writers** — User guides, release notes, help docs
+- **Engineering Leads** — Onboarding docs, team handbooks
+- **Startup Founders** — Professional docs without hiring a documentation team
 
 ---
 
 ## Contributing
 
-Contributions welcome! Ideas for improvements:
+Contributions welcome!
 
 1. Fork the repository
 2. Create a feature branch
