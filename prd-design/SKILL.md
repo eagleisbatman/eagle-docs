@@ -1,6 +1,6 @@
 ---
 name: prd-design
-description: Create professional Product Requirements Documents (PRDs) as beautiful HTML documents with brutalist styling. Outputs are desktop-optimized with one section per viewport, scroll-based navigation, and consistent structure. Use when user requests PRD, product spec, requirements document, or product documentation.
+description: Create professional Product Requirements Documents (PRDs) as beautiful HTML documents. Supports multiple themes (Brutalist, Material 3, Cupertino, Modern Minimal) and custom brand colors. Outputs are desktop-optimized with one section per viewport and scroll-based navigation. Use when user requests PRD, product spec, requirements document, or product documentation.
 ---
 
 # PRD Design Skill
@@ -9,7 +9,22 @@ description: Create professional Product Requirements Documents (PRDs) as beauti
 
 ## Overview
 
-Creates professional Product Requirements Documents as HTML files with brutalist black-and-white aesthetics. Each section occupies one viewport with scroll-based navigation. Optimized for desktop/laptop viewing (1024px+).
+Creates professional Product Requirements Documents as self-contained HTML files. Each section occupies one viewport with scroll-based navigation. Optimized for desktop/laptop viewing (1024px+).
+
+## Theme Support
+
+Before generating, check for user preferences:
+
+1. **Config file**: Look for `.eagle-docs.yaml` in project root
+2. **Runtime prompt**: Ask user if no config exists
+
+Available themes:
+- **Brutalist** — Bold black-and-white, harsh shadows, monospace-heavy
+- **Material 3** — Rounded corners, elevation shadows, Google's design
+- **Cupertino** — Apple-style, subtle gradients, system fonts
+- **Modern Minimal** — Clean lines, generous whitespace, contemporary
+
+See `shared/DESIGN-SYSTEM.md` for complete theme specifications.
 
 ## PRD Structure (Required Sections)
 

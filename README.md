@@ -2,11 +2,92 @@
 
 **Professional documentation templates for modern teams.**
 
-Eagle Docs is a collection of battle-tested documentation skills that generate beautiful, consistent HTML documents with a distinctive brutalist black-and-white aesthetic. Built for Claude Code, these skills help product managers, engineers, designers, and technical writers create professional documentation in minutes, not hours.
+Eagle Docs is a collection of battle-tested documentation skills that generate beautiful, consistent HTML documents. Built for Claude Code, these skills help product managers, engineers, designers, and technical writers create professional documentation in minutes, not hours.
 
 ---
 
-## What's Inside
+## Features
+
+- **4 Design Themes** — Brutalist, Material 3, Cupertino, Modern Minimal
+- **Custom Brand Colors** — Use your own color palette
+- **8 Document Types** — PRDs, wireframes, API docs, database schemas, and more
+- **Self-Contained HTML** — No build step, open in any browser
+- **One Section Per Viewport** — Clean, scroll-based navigation
+
+---
+
+## Quick Start
+
+**See [QUICK-START.md](./QUICK-START.md) for copy-paste prompts for each document type.**
+
+### Example Prompt
+
+```
+Create a PRD for a habit tracking mobile app.
+
+Context:
+- Mobile app for iOS and Android
+- Target users: Young professionals wanting to build better habits
+
+Theme: Cupertino
+Primary color: #5856D6
+```
+
+---
+
+## Installation
+
+### Option 1: Project-Level (Recommended for Teams)
+
+Clone into your project's `.claude/skills/` directory:
+
+```bash
+git clone https://github.com/eagleisbatman/eagle-docs.git .claude/skills/eagle-docs
+```
+
+Skills will be automatically discovered for this project.
+
+### Option 2: User-Level (Personal Use)
+
+Clone into your global Claude Code skills directory:
+
+```bash
+git clone https://github.com/eagleisbatman/eagle-docs.git ~/.claude/skills/eagle-docs
+```
+
+Skills will be available across all your projects.
+
+---
+
+## Configuration (Optional)
+
+Create `.eagle-docs.yaml` in your project root to set default preferences:
+
+```yaml
+# .eagle-docs.yaml
+theme: material  # brutalist | material | cupertino | minimal
+
+colors:
+  primary: "#2563EB"      # Main brand color
+  secondary: "#1E293B"    # Supporting color
+  accent: "#10B981"       # Highlights, CTAs
+  background: "#FFFFFF"   # Page background
+  surface: "#F8FAFC"      # Card backgrounds
+  text: "#0F172A"         # Primary text
+
+mode: light  # light | dark
+
+typography:
+  heading: "Inter"
+  body: "Inter"
+  mono: "JetBrains Mono"
+```
+
+If no config file exists, you can specify preferences in your prompt or Claude will ask you.
+
+---
+
+## Available Skills
 
 | Skill | Purpose | Best For |
 |-------|---------|----------|
@@ -21,15 +102,19 @@ Eagle Docs is a collection of battle-tested documentation skills that generate b
 
 ---
 
-## Design Philosophy
+## Design Themes
 
-All Eagle Docs outputs share a consistent design language:
+### Brutalist
+Bold black-and-white with harsh shadows. Technical, developer-focused aesthetic.
 
-- **Brutalist aesthetic** — Bold black-and-white styling, no unnecessary decoration
-- **One section per viewport** — Each section is designed to fill exactly one screen
-- **Scroll-based navigation** — Smooth, predictable navigation through documents
-- **Desktop-optimized** — Built for the screens where real work happens
-- **Print-ready** — Clean output that looks great when printed or exported
+### Material 3
+Google's Material Design 3. Rounded corners, elevation shadows, systematic spacing.
+
+### Cupertino
+Apple Human Interface Guidelines aesthetic. Subtle gradients, system fonts, refined.
+
+### Modern Minimal
+Clean lines, generous whitespace, contemporary feel. Perfect for startups.
 
 ---
 
@@ -46,78 +131,52 @@ All Eagle Docs outputs share a consistent design language:
 
 ---
 
-## How It Works
-
-Eagle Docs skills are designed for [Claude Code](https://claude.ai/claude-code). Each skill:
-
-1. Takes your requirements as natural language input
-2. Generates a complete HTML document with proper structure
-3. Applies consistent brutalist styling automatically
-4. Outputs a single, self-contained HTML file
-
-### Example Usage
-
-```
-You: Create a PRD for a user authentication system with OAuth support
-
-Claude: [Generates a complete PRD with sections for overview, user stories,
-        technical requirements, success metrics, and more]
-```
-
----
-
 ## File Structure
 
 ```
 eagle-docs/
 ├── README.md
+├── QUICK-START.md              # Copy-paste prompts
 ├── shared/
-│   └── DESIGN-SYSTEM.md          # Shared styling & components
+│   └── DESIGN-SYSTEM.md        # Theme specs & color system
 ├── prd-design/
-│   └── SKILL.md                  # Product Requirements Documents
+│   └── SKILL.md
 ├── wireframe-design/
-│   └── SKILL.md                  # UI Wireframes & Mockups
+│   └── SKILL.md
 ├── database-schema-design/
-│   └── SKILL.md                  # Database ERDs & Schemas
+│   └── SKILL.md
 ├── api-spec-design/
-│   └── SKILL.md                  # API Documentation
+│   └── SKILL.md
 ├── infrastructure-design/
-│   └── SKILL.md                  # Architecture & Infrastructure
+│   └── SKILL.md
 ├── analytics-design/
-│   └── SKILL.md                  # Analytics & Event Tracking
+│   └── SKILL.md
 ├── content-pipeline-design/
-│   └── SKILL.md                  # AI Content Generation Pipelines
+│   └── SKILL.md
 └── launch-playbook-design/
-    └── SKILL.md                  # Launch & GTM Planning
+    └── SKILL.md
 ```
 
 ---
 
-## Installation
+## Output
 
-### For Claude Code Users
+All documents are generated as self-contained HTML files:
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/eagleisbatman/eagle-docs.git
-   ```
+```
+./outputs/[document-name].html
+```
 
-2. Copy the skills to your Claude Code skills directory:
-   ```bash
-   cp -r eagle-docs/* ~/.claude/skills/
-   ```
-
-3. Restart Claude Code — the skills will be automatically detected.
-
-### Manual Usage
-
-Each `SKILL.md` file contains the complete prompt and styling guidelines. You can use these directly with any LLM by copying the skill content into your conversation.
+- Open directly in any browser
+- No build step required
+- Print-ready
+- Easy to share
 
 ---
 
 ## Contributing
 
-Contributions are welcome! If you have ideas for new documentation types or improvements to existing skills:
+Contributions welcome! Ideas for improvements:
 
 1. Fork the repository
 2. Create a feature branch

@@ -1,21 +1,36 @@
 ---
-name: wireframe-design-v2
-description: Create high-quality black-and-white mobile and web wireframes with proper Lucide icons, brutalist styling, and comprehensive annotations. Outputs are HTML documents optimized for desktop/laptop viewing with one screen per viewport and scroll-based navigation. Use when user requests wireframes, mockups, UI designs, or says "black and white" or "low fidelity" design.
+name: wireframe-design
+description: Create high-quality mobile and web wireframes with proper Lucide icons and comprehensive annotations. Supports multiple themes (Brutalist, Material 3, Cupertino, Modern Minimal) and custom brand colors. Outputs are HTML documents optimized for desktop/laptop viewing with one screen per viewport and scroll-based navigation. Use when user requests wireframes, mockups, UI designs, or low-fidelity designs.
 ---
 
-# Wireframe Design Skill v2
+# Wireframe Design Skill
 
 **Author:** Gautam Mandewalker ([@eagleisbatman](https://github.com/eagleisbatman))
 
 ## Overview
 
-Creates professional, black-and-white wireframes as HTML documents. Each screen occupies one viewport height with scroll-based navigation. Optimized for desktop/laptop viewing (1024px+).
+Creates professional wireframes as self-contained HTML documents. Each screen occupies one viewport height with scroll-based navigation. Optimized for desktop/laptop viewing (1024px+).
 
-## Key Changes from v1
-- **One screen per viewport** - No cramped horizontal layouts
-- **Larger fonts** - 16px base, 14px minimum for annotations
-- **Sticky navigation** - TOC sidebar for quick jumping
-- **Desktop-first** - Optimized for laptop/desktop screens
+## Theme Support
+
+Before generating, check for user preferences:
+
+1. **Config file**: Look for `.eagle-docs.yaml` in project root
+2. **Runtime prompt**: Ask user if no config exists
+
+Available themes:
+- **Brutalist** — Bold black-and-white, harsh shadows (classic wireframe look)
+- **Material 3** — Rounded corners, elevation shadows, Google's design
+- **Cupertino** — Apple-style, subtle gradients, iOS/macOS aesthetic
+- **Modern Minimal** — Clean lines, generous whitespace, contemporary
+
+See `shared/DESIGN-SYSTEM.md` for complete theme specifications.
+
+## Key Features
+- **One screen per viewport** — No cramped horizontal layouts
+- **Larger fonts** — 16px base, 14px minimum for annotations
+- **Sticky navigation** — TOC sidebar for quick jumping
+- **Desktop-first** — Optimized for laptop/desktop screens
 
 ## Technical Setup
 

@@ -1,6 +1,6 @@
 ---
 name: analytics-design
-description: Create professional analytics framework documentation as HTML with brutalist styling. Includes event taxonomy, KPIs, funnel analysis, cohort analysis, A/B testing framework, and dashboard specifications. Outputs are desktop-optimized with one section per viewport. Use when user requests analytics documentation, event tracking spec, KPI framework, metrics design, or data pipeline documentation.
+description: Create professional analytics framework documentation as HTML. Includes event taxonomy, KPIs, funnel analysis, cohort analysis, A/B testing framework, and dashboard specifications. Supports multiple themes (Brutalist, Material 3, Cupertino, Modern Minimal) and custom colors. Outputs are desktop-optimized with one section per viewport. Use when user requests analytics documentation, event tracking spec, KPI framework, metrics design, or data pipeline documentation.
 ---
 
 # Analytics Design Skill
@@ -9,7 +9,22 @@ description: Create professional analytics framework documentation as HTML with 
 
 ## Overview
 
-Creates professional analytics framework documentation as HTML files with brutalist black-and-white aesthetics. Each section occupies one viewport with scroll-based navigation.
+Creates professional analytics framework documentation as self-contained HTML files. Each section occupies one viewport with scroll-based navigation.
+
+## Theme Support
+
+Before generating, check for user preferences:
+
+1. **Config file**: Look for `.eagle-docs.yaml` in project root
+2. **Runtime prompt**: Ask user if no config exists
+
+Available themes:
+- **Brutalist** — Bold black-and-white, harsh shadows, data-focused
+- **Material 3** — Rounded corners, elevation shadows, Google's design
+- **Cupertino** — Apple-style, subtle gradients, refined look
+- **Modern Minimal** — Clean lines, generous whitespace, contemporary
+
+See `shared/DESIGN-SYSTEM.md` for complete theme specifications.
 
 ## Document Structure (Required Sections)
 

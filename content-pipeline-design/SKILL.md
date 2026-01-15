@@ -1,6 +1,6 @@
 ---
 name: content-pipeline-design
-description: Create professional content generation pipeline documentation as HTML with brutalist styling. Includes data sources, AI script generation, TTS synthesis, audio processing, quality assurance, and scheduling. Outputs are desktop-optimized with one section per viewport. Use when user requests content pipeline documentation, AI generation workflow, TTS pipeline, audio processing documentation, or content automation design.
+description: Create professional content generation pipeline documentation as HTML. Includes data sources, AI script generation, TTS synthesis, audio processing, quality assurance, and scheduling. Supports multiple themes (Brutalist, Material 3, Cupertino, Modern Minimal) and custom colors. Outputs are desktop-optimized with one section per viewport. Use when user requests content pipeline documentation, AI generation workflow, TTS pipeline, audio processing documentation, or content automation design.
 ---
 
 # Content Pipeline Design Skill
@@ -9,7 +9,22 @@ description: Create professional content generation pipeline documentation as HT
 
 ## Overview
 
-Creates professional content generation pipeline documentation as HTML files with brutalist black-and-white aesthetics. Each section occupies one viewport with scroll-based navigation.
+Creates professional content generation pipeline documentation as self-contained HTML files. Each section occupies one viewport with scroll-based navigation.
+
+## Theme Support
+
+Before generating, check for user preferences:
+
+1. **Config file**: Look for `.eagle-docs.yaml` in project root
+2. **Runtime prompt**: Ask user if no config exists
+
+Available themes:
+- **Brutalist** — Bold black-and-white, harsh shadows, technical aesthetic
+- **Material 3** — Rounded corners, elevation shadows, Google's design
+- **Cupertino** — Apple-style, subtle gradients, refined look
+- **Modern Minimal** — Clean lines, generous whitespace, contemporary
+
+See `shared/DESIGN-SYSTEM.md` for complete theme specifications.
 
 ## Document Structure (Required Sections)
 
