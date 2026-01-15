@@ -1,0 +1,55 @@
+---
+description: Generate Infrastructure Documentation - triggers on infrastructure, architecture diagram, deployment, cloud architecture, DevOps, system architecture
+globs:
+alwaysApply: false
+---
+
+# Infrastructure Design Skill
+
+Generate professional infrastructure documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/infrastructure-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Infrastructure Overview** - Cloud provider, regions, strategy
+2. **Architecture Diagram** - Visual system topology
+3. **Compute Resources** - Servers, containers, serverless
+4. **Data Storage** - Databases, caches, file storage
+5. **Networking** - VPCs, subnets, load balancers
+6. **Security** - IAM, encryption, firewalls
+7. **Monitoring & Logging** - Observability stack
+8. **CI/CD Pipeline** - Build, test, deploy flow
+9. **Disaster Recovery** - Backup, failover, RTO/RPO
+10. **Cost Estimates** - Monthly/annual projections
+
+## Key Components
+
+- **Architecture diagrams** - Cloud service icons, connections
+- **Resource tables** - Service, size, quantity, cost
+- **Network diagrams** - VPC layout, security groups
+- **Pipeline diagrams** - CI/CD flow visualization
+- **Cost breakdowns** - Service-by-service estimates
+
+## Cloud Providers
+
+- **AWS** - EC2, RDS, S3, Lambda, etc.
+- **GCP** - Compute Engine, Cloud SQL, GCS, Cloud Functions
+- **Azure** - VMs, Azure SQL, Blob Storage, Functions
+
+## Diagram Conventions
+
+```
+[Internet] → [CDN] → [Load Balancer]
+                          ↓
+              [App Servers (Auto-scaling)]
+                          ↓
+              [Database] ← [Cache]
+```
+
+## Output
+
+Save to: `./outputs/[project]-infrastructure.html`

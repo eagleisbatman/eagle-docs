@@ -1,0 +1,52 @@
+---
+description: Generate Technical Spec - triggers on technical spec, tech spec, RFC, system design, engineering spec, architecture document
+globs:
+alwaysApply: false
+---
+
+# Technical Spec Skill
+
+Generate professional technical specification documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/technical-spec-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Overview** - Problem, solution summary, scope
+2. **Background** - Context, existing systems, constraints
+3. **Goals & Non-Goals** - What we will/won't solve
+4. **Proposed Solution** - Detailed technical approach
+5. **System Architecture** - Components, interactions
+6. **Data Model** - Entities, relationships, schemas
+7. **API Design** - Endpoints, contracts
+8. **Security Considerations** - Auth, encryption, threats
+9. **Performance Requirements** - SLAs, benchmarks
+10. **Testing Strategy** - Unit, integration, e2e
+11. **Rollout Plan** - Deployment phases
+12. **Open Questions** - Unresolved decisions
+13. **Alternatives Considered** - Why not chosen
+
+## Key Components
+
+- **Architecture diagrams** - Box-and-arrow system views
+- **Sequence diagrams** - Request flows
+- **Code blocks** - Syntax-highlighted examples
+- **Decision tables** - Options with pros/cons
+- **Timeline** - Implementation phases
+
+## RFC Format (Optional)
+
+```
+RFC: [Number]
+Title: [Feature Name]
+Author: [Name]
+Status: Draft | Review | Approved | Implemented
+Created: [Date]
+```
+
+## Output
+
+Save to: `./outputs/[feature]-tech-spec.html`

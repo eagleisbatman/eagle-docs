@@ -1,0 +1,62 @@
+---
+description: Generate Onboarding Documentation - triggers on onboarding docs, new hire guide, setup guide, developer onboarding, team onboarding, welcome guide
+globs:
+alwaysApply: false
+---
+
+# Onboarding Docs Design Skill
+
+Generate professional onboarding documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/onboarding-docs-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Welcome** - Company/team intro, mission
+2. **Day 1 Checklist** - Immediate setup tasks
+3. **Week 1 Goals** - First week milestones
+4. **Tools & Access** - Required accounts, software
+5. **Development Setup** - Local environment setup
+6. **Codebase Overview** - Architecture, key repos
+7. **Team & Contacts** - Who's who, communication channels
+8. **Processes** - Git workflow, PR reviews, deployments
+9. **Resources** - Documentation links, learning materials
+10. **FAQ** - Common new hire questions
+
+## Key Components
+
+- **Progress checklist** - Trackable onboarding tasks
+- **Timeline** - Day 1, Week 1, Month 1 milestones
+- **Contact cards** - Team member info
+- **Tool cards** - Software with download links
+- **Code blocks** - Setup commands
+- **Links section** - Important bookmarks
+
+## Checklist Format
+
+```
+Day 1:
+☐ Set up email and Slack
+☐ Complete HR paperwork
+☐ Meet your buddy
+☐ Set up local development environment
+
+Week 1:
+☐ Review codebase documentation
+☐ Complete first PR (starter task)
+☐ Shadow a team member
+☐ Attend team standup
+```
+
+## Audience Types
+
+- **Developer Onboarding** - Technical setup focus
+- **General Employee** - Company-wide info
+- **Contractor** - Limited access, project-specific
+
+## Output
+
+Save to: `./outputs/[team]-onboarding.html`

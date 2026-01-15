@@ -1,0 +1,47 @@
+---
+description: Generate Launch Playbook - triggers on launch playbook, go-to-market, GTM strategy, release checklist, launch plan, go-live documentation
+globs:
+alwaysApply: false
+---
+
+# Launch Playbook Skill
+
+Generate professional launch playbook documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/launch-playbook-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Launch Overview** - Product, date, type, success criteria
+2. **Launch Phases** - Pre-launch, Launch Day, Post-launch
+3. **Team & Responsibilities** - RACI matrix
+4. **Checklist** - Detailed task lists per phase
+5. **Communication Plan** - Internal/external messaging
+6. **Risk Management** - Launch risks and mitigations
+7. **Rollback Plan** - If things go wrong
+8. **Success Metrics** - KPIs to track
+9. **Post-Launch Review** - Retrospective template
+
+## Key Components
+
+- **Phase timeline** - Visual launch phases
+- **Checklist tables** - Tasks with owners, status, dates
+- **RACI matrix** - Responsible/Accountable/Consulted/Informed
+- **Risk register** - Probability × Impact scoring
+- **Communication templates** - Pre-written announcements
+- **Runbook sections** - Step-by-step procedures
+
+## Launch Types
+
+- **Big Bang** - Full release to all users
+- **Phased Rollout** - Gradual percentage increase
+- **Beta/Early Access** - Limited audience first
+- **Feature Flag** - Controlled feature exposure
+- **Geographic** - Region-by-region release
+
+## Output
+
+Save to: `./outputs/[product]-launch-playbook.html`

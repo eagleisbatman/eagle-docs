@@ -1,0 +1,56 @@
+---
+description: Generate Database Schema - triggers on database schema, ERD, entity relationship, table definitions, data model, SQL schema
+globs:
+alwaysApply: false
+---
+
+# Database Schema Design Skill
+
+Generate professional database schema documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/database-schema-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Schema Overview** - Database type, naming conventions
+2. **ERD Diagram** - Visual entity relationships
+3. **Table Definitions** - Columns, types, constraints
+4. **Relationships** - Foreign keys, cardinality
+5. **Indexes** - Performance indexes
+6. **Migrations** - Schema change strategy
+7. **Sample Queries** - Common operations
+
+## Table Definition Format
+
+```
+┌─────────────────────────────────┐
+│ users                           │
+├─────────────────────────────────┤
+│ PK id          UUID             │
+│    email       VARCHAR(255) UQ  │
+│    name        VARCHAR(100)     │
+│    created_at  TIMESTAMP        │
+│ FK org_id      UUID → orgs.id   │
+└─────────────────────────────────┘
+```
+
+## Relationship Types
+
+- **1:1** - One to one (user ↔ profile)
+- **1:N** - One to many (user → posts)
+- **N:M** - Many to many (users ↔ roles via user_roles)
+
+## Key Components
+
+- **ERD visualization** - Tables with relationship lines
+- **Column tables** - Name, type, nullable, default, description
+- **Index tables** - Name, columns, type (B-tree, Hash, etc.)
+- **SQL code blocks** - CREATE TABLE statements
+- **Cardinality notation** - Crow's foot or Chen notation
+
+## Output
+
+Save to: `./outputs/[project]-database-schema.html`

@@ -1,0 +1,40 @@
+---
+description: Generate PRD (Product Requirements Document) - triggers on PRD, product spec, requirements document, product documentation, feature spec
+globs:
+alwaysApply: false
+---
+
+# PRD Design Skill
+
+Generate professional Product Requirements Documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/prd-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Executive Summary** - Overview, key dates, document status
+2. **Problem Statement** - User pain points, market opportunity
+3. **Goals & Metrics** - OKRs, KPIs with specific targets
+4. **User Personas** - 2-4 detailed user archetypes
+5. **Requirements** - MoSCoW prioritized (Must/Should/Could/Won't)
+6. **User Stories** - As a [user], I want [goal], so that [benefit]
+7. **Scope** - Explicitly in-scope and out-of-scope items
+8. **Technical Architecture** - High-level system design
+9. **Timeline & Milestones** - Phases with dates
+10. **Risks & Mitigations** - Risk register with severity
+
+## Key Components
+
+- **Sidebar navigation** - 300px fixed, with section links
+- **Metadata grid** - Document info (owner, status, version, dates)
+- **Persona cards** - Avatar, demographics, goals, pain points
+- **Priority badges** - Color-coded MUST/SHOULD/COULD/WON'T
+- **Timeline visualization** - Phase blocks with milestones
+- **Risk matrix** - Probability vs Impact grid
+
+## Output
+
+Save to: `./outputs/[product-name]-prd.html`

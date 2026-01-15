@@ -1,0 +1,59 @@
+---
+description: Generate Prioritization Framework - triggers on RICE, MoSCoW, ICE, Kano, prioritization matrix, value effort matrix, feature prioritization
+globs:
+alwaysApply: false
+---
+
+# Prioritization Framework Skill
+
+Generate professional prioritization documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/prioritization-framework-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Supported Frameworks
+
+### 1. RICE Scoring
+- **R**each - How many users affected
+- **I**mpact - Effect on each user (0.25-3x)
+- **C**onfidence - Certainty percentage
+- **E**ffort - Person-months required
+- Formula: (Reach × Impact × Confidence) / Effort
+
+### 2. MoSCoW Method
+- **Must Have** - Critical, non-negotiable
+- **Should Have** - Important but not critical
+- **Could Have** - Nice to have
+- **Won't Have** - Explicitly excluded (this time)
+
+### 3. ICE Scoring
+- **I**mpact - Expected outcome (1-10)
+- **C**onfidence - Certainty level (1-10)
+- **E**ase - Implementation ease (1-10)
+- Score: Impact × Confidence × Ease
+
+### 4. Value/Effort Matrix (2x2)
+- Quick Wins (High Value, Low Effort)
+- Big Bets (High Value, High Effort)
+- Fill-Ins (Low Value, Low Effort)
+- Money Pits (Low Value, High Effort)
+
+### 5. Kano Model
+- Must-Be (Basic expectations)
+- One-Dimensional (Performance)
+- Attractive (Delighters)
+- Indifferent
+- Reverse
+
+## Key Components
+
+- **Scoring tables** - Sortable by score
+- **2x2 matrix** - Visual quadrant placement
+- **Priority badges** - Color-coded categories
+- **Comparison charts** - Bar/radar visualizations
+
+## Output
+
+Save to: `./outputs/[project]-prioritization.html`

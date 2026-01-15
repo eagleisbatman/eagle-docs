@@ -1,0 +1,62 @@
+---
+description: Generate Business Canvas - triggers on Business Model Canvas, BMC, Lean Canvas, Value Proposition Canvas, business model, startup canvas
+globs:
+alwaysApply: false
+---
+
+# Business Canvas Skill
+
+Generate professional business canvas documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/business-canvas-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Supported Canvases
+
+### 1. Business Model Canvas (BMC)
+9 building blocks:
+- Customer Segments
+- Value Propositions
+- Channels
+- Customer Relationships
+- Revenue Streams
+- Key Resources
+- Key Activities
+- Key Partnerships
+- Cost Structure
+
+### 2. Lean Canvas
+Startup-focused adaptation:
+- Problem (top 3 problems)
+- Solution (top 3 features)
+- Key Metrics
+- Unique Value Proposition
+- Unfair Advantage
+- Channels
+- Customer Segments
+- Cost Structure
+- Revenue Streams
+
+### 3. Value Proposition Canvas
+Deep customer fit:
+- **Customer Profile:**
+  - Jobs to be done
+  - Pains
+  - Gains
+- **Value Map:**
+  - Products & Services
+  - Pain Relievers
+  - Gain Creators
+
+## Key Components
+
+- **Canvas grid** - 9-block responsive layout
+- **Sticky notes** - Items within each block
+- **Color coding** - Category differentiation
+- **Fit indicators** - Value prop alignment
+
+## Output
+
+Save to: `./outputs/[company]-business-canvas.html`

@@ -1,0 +1,55 @@
+---
+description: Generate User Guide - triggers on user guide, help documentation, user manual, how-to guide, tutorial, getting started guide
+globs:
+alwaysApply: false
+---
+
+# User Guide Design Skill
+
+Generate professional user guide documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/user-guide-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Getting Started** - Quick start, prerequisites
+2. **Installation/Setup** - Step-by-step setup
+3. **Core Features** - Main functionality walkthroughs
+4. **How-To Guides** - Task-based tutorials
+5. **FAQ** - Common questions
+6. **Troubleshooting** - Common issues & solutions
+7. **Glossary** - Term definitions
+8. **Contact/Support** - How to get help
+
+## Key Components
+
+- **Step-by-step instructions** - Numbered steps with screenshots
+- **Callout boxes** - Tips, warnings, notes
+- **Code snippets** - Copy-paste examples
+- **Screenshots** - Annotated UI images
+- **Video embeds** - Tutorial video placeholders
+- **Search** - In-page search (optional)
+
+## Callout Types
+
+```
+💡 TIP: Helpful suggestion
+⚠️ WARNING: Caution needed
+ℹ️ NOTE: Additional information
+🚫 DON'T: What to avoid
+```
+
+## Writing Style
+
+- Use second person ("you")
+- Active voice
+- Short paragraphs
+- Bullet points for lists
+- Consistent terminology
+
+## Output
+
+Save to: `./outputs/[product]-user-guide.html`

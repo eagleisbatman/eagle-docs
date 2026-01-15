@@ -1,0 +1,61 @@
+---
+description: Generate Wireframes - triggers on wireframe, mockup, UI design, low-fidelity, screen design, mobile wireframe, web wireframe
+globs:
+alwaysApply: false
+---
+
+# Wireframe Design Skill
+
+Generate professional wireframe documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/wireframe-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Wireframe Style
+
+- **Black and white only** - No colors, grayscale for emphasis
+- **Placeholder content** - Lorem ipsum, placeholder images
+- **Lucide icons** - Consistent icon library
+- **Annotations** - Numbered callouts explaining interactions
+
+## Device Types
+
+### Mobile (375px viewport)
+- Single column layouts
+- Touch-friendly targets (44px min)
+- Bottom navigation patterns
+- Swipe gestures noted
+
+### Tablet (768px viewport)
+- Adaptive layouts
+- Split views where appropriate
+- Landscape considerations
+
+### Desktop (1024px+ viewport)
+- Multi-column layouts
+- Sidebar navigation
+- Hover states noted
+
+## Key Components
+
+- **Device frames** - Phone/tablet/desktop outlines
+- **Navigation patterns** - Tab bars, hamburger menus, sidebars
+- **Form elements** - Inputs, buttons, checkboxes
+- **Cards & lists** - Content containers
+- **Modals & overlays** - Dialog patterns
+- **Annotation markers** - Numbered circles with explanations
+
+## Annotation Format
+
+```
+① Navigation - Sticky top bar with logo and menu
+② Search - Expandable search with autocomplete
+③ Content - Scrollable feed with infinite scroll
+④ Action - Floating action button for new post
+```
+
+## Output
+
+Save to: `./outputs/[feature]-wireframes.html`

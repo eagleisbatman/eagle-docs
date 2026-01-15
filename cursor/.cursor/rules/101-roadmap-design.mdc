@@ -1,0 +1,61 @@
+---
+description: Generate Product Roadmap - triggers on roadmap, timeline roadmap, now/next/later, feature roadmap, release plan, quarterly planning
+globs:
+alwaysApply: false
+---
+
+# Roadmap Design Skill
+
+Generate professional product roadmaps as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/roadmap-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Supported Formats
+
+### 1. Timeline Roadmap
+- Quarter/Month columns
+- Swimlanes by team/theme
+- Milestone markers
+- Dependencies shown
+
+### 2. Now/Next/Later
+- **Now** - Currently building (committed)
+- **Next** - Up next (planned)
+- **Later** - Future consideration (exploratory)
+
+### 3. Theme-Based Roadmap
+- Strategic theme groupings
+- Initiatives per theme
+- Progress indicators
+- Goal alignment
+
+### 4. Release Roadmap
+- Version milestones (v1.0, v2.0)
+- Features per release
+- Target dates
+- Dependencies
+
+## Required Sections
+
+1. **Roadmap Overview** - Vision, time horizon, format choice
+2. **Strategic Context** - Goals, themes, success metrics
+3. **Roadmap View** - Main visual roadmap
+4. **Initiative Details** - Breakdown per item
+5. **Dependencies** - Cross-team dependencies
+6. **Risks & Assumptions** - Key uncertainties
+7. **Change Log** - Roadmap revisions
+
+## Key Components
+
+- **Timeline grid** - Scrollable horizontal timeline
+- **Swimlanes** - Team/theme rows with items
+- **Status indicators** - Done/In Progress/Planned
+- **NNL columns** - Three-column Now/Next/Later layout
+- **Release cards** - Version blocks with features
+
+## Output
+
+Save to: `./outputs/[product]-roadmap.html`

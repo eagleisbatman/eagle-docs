@@ -1,0 +1,55 @@
+---
+description: Generate Strategic Analysis - triggers on SWOT, PESTEL, Porter's Five Forces, competitive analysis, market analysis, strategic planning
+globs:
+alwaysApply: false
+---
+
+# Strategic Analysis Skill
+
+Generate professional strategic analysis documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/strategic-analysis-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Supported Frameworks
+
+### 1. SWOT Analysis
+- **S**trengths - Internal positives
+- **W**eaknesses - Internal negatives
+- **O**pportunities - External positives
+- **T**hreats - External negatives
+
+### 2. PESTEL Analysis
+- **P**olitical - Government, regulation
+- **E**conomic - Market conditions, trends
+- **S**ocial - Demographics, culture
+- **T**echnological - Innovation, disruption
+- **E**nvironmental - Sustainability, climate
+- **L**egal - Laws, compliance
+
+### 3. Porter's Five Forces
+- Threat of New Entrants
+- Bargaining Power of Suppliers
+- Bargaining Power of Buyers
+- Threat of Substitutes
+- Industry Rivalry
+
+### 4. Competitive Analysis
+- Competitor profiles
+- Feature comparison matrix
+- Market positioning map
+- Strengths/weaknesses per competitor
+
+## Key Components
+
+- **2x2 SWOT grid** - Four-quadrant layout
+- **PESTEL cards** - Six-category breakdown
+- **Force diagrams** - Visual Porter's model
+- **Comparison tables** - Feature matrices
+- **Positioning charts** - 2D market maps
+
+## Output
+
+Save to: `./outputs/[company]-strategic-analysis.html`

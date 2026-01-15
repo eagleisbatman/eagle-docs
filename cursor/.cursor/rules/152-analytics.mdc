@@ -1,0 +1,48 @@
+---
+description: Generate Analytics Framework - triggers on analytics, KPIs, event tracking, metrics framework, data pipeline, funnel analysis, dashboard spec
+globs:
+alwaysApply: false
+---
+
+# Analytics Design Skill
+
+Generate professional analytics framework documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/analytics-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Analytics Overview** - Goals, tools, data strategy
+2. **KPI Framework** - North star metric, supporting KPIs
+3. **Event Taxonomy** - Event naming conventions, properties
+4. **Funnel Analysis** - Conversion funnels, drop-off points
+5. **Cohort Analysis** - User segmentation approach
+6. **A/B Testing Framework** - Experiment design
+7. **Dashboard Specifications** - Layout, charts, filters
+8. **Data Pipeline** - Collection → Processing → Storage
+
+## Key Components
+
+- **KPI cards** - Metric, target, current, trend
+- **Event tables** - Name, trigger, properties, example
+- **Funnel diagrams** - Step visualization with percentages
+- **Dashboard mockups** - Chart layouts
+- **Taxonomy trees** - Hierarchical event structure
+
+## Event Naming Convention
+
+```
+[object]_[action]
+```
+Examples:
+- `user_signed_up`
+- `product_viewed`
+- `checkout_completed`
+- `subscription_cancelled`
+
+## Output
+
+Save to: `./outputs/[product]-analytics.html`

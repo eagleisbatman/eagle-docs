@@ -1,0 +1,61 @@
+---
+description: Generate Release Notes - triggers on release notes, changelog, version history, what's new, update notes, patch notes
+globs:
+alwaysApply: false
+---
+
+# Release Notes Design Skill
+
+Generate professional release notes documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/release-notes-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **Latest Release** - Featured prominently
+2. **Version History** - Chronological list
+3. **Per-Version Details** - Features, fixes, breaking changes
+4. **Migration Guides** - For breaking changes
+5. **Known Issues** - Current limitations
+
+## Version Entry Format
+
+```
+## v2.1.0 - January 15, 2026
+
+### ✨ New Features
+- Feature description with benefit
+
+### 🐛 Bug Fixes
+- Fixed issue with [component]
+
+### 💥 Breaking Changes
+- Changed API endpoint from X to Y
+
+### 🔧 Improvements
+- Performance improvement in [area]
+
+### 📚 Documentation
+- Updated guide for [feature]
+```
+
+## Key Components
+
+- **Version badges** - Major (red), Minor (blue), Patch (green)
+- **Category icons** - Visual differentiation
+- **Collapsible sections** - For older versions
+- **Anchor links** - Jump to specific version
+- **Date formatting** - Consistent date display
+
+## Versioning (SemVer)
+
+- **Major (X.0.0)** - Breaking changes
+- **Minor (0.X.0)** - New features, backward compatible
+- **Patch (0.0.X)** - Bug fixes
+
+## Output
+
+Save to: `./outputs/[product]-release-notes.html`

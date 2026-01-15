@@ -1,0 +1,65 @@
+---
+description: Generate API Documentation - triggers on API docs, REST API, API specification, endpoint documentation, API reference, OpenAPI
+globs:
+alwaysApply: false
+---
+
+# API Spec Design Skill
+
+Generate professional API documentation as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/api-spec-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Required Sections
+
+1. **API Overview** - Base URL, versioning, authentication
+2. **Authentication** - API keys, OAuth, JWT
+3. **Endpoints** - Grouped by resource
+4. **Request/Response** - Parameters, body, examples
+5. **Error Handling** - Error codes, messages
+6. **Rate Limiting** - Limits, headers
+7. **SDKs & Examples** - Code in multiple languages
+8. **Changelog** - Version history
+
+## Endpoint Format
+
+For each endpoint:
+```
+[METHOD] /path/{param}
+
+Description: What it does
+
+Headers:
+  Authorization: Bearer {token}
+  Content-Type: application/json
+
+Path Parameters:
+  param (string, required) - Description
+
+Query Parameters:
+  limit (integer, optional) - Max results, default 20
+
+Request Body:
+  { "field": "value" }
+
+Response 200:
+  { "data": [...] }
+
+Response 400:
+  { "error": "message" }
+```
+
+## Key Components
+
+- **Method badges** - GET (green), POST (blue), PUT (orange), DELETE (red)
+- **Parameter tables** - Name, type, required, description
+- **Code examples** - cURL, JavaScript, Python tabs
+- **Response schemas** - JSON with type annotations
+- **Try it** sections - Interactive testing (optional)
+
+## Output
+
+Save to: `./outputs/[api-name]-api-docs.html`

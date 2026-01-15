@@ -1,0 +1,60 @@
+---
+description: Generate User Research Documentation - triggers on user persona, journey map, JTBD, jobs to be done, empathy map, customer research, user insights
+globs:
+alwaysApply: false
+---
+
+# User Research Skill
+
+Generate professional user research documents as self-contained HTML.
+
+## Full Documentation
+
+Read complete skill details from: `docs/skills/user-research-design.md`
+Read theme CSS from: `docs/DESIGN-SYSTEM.md`
+
+## Supported Frameworks
+
+### 1. User Personas
+- Name, photo placeholder, quote
+- Demographics (age, location, role)
+- Goals & Motivations
+- Pain Points & Frustrations
+- Behaviors & Habits
+- Tech Savviness
+- Preferred Channels
+
+### 2. Customer Journey Map
+- Stages/Phases (Awareness → Purchase → Retention)
+- Actions per stage
+- Thoughts (what they're thinking)
+- Emotions (positive/neutral/negative)
+- Touchpoints (where interaction happens)
+- Pain Points (frustrations)
+- Opportunities (improvements)
+
+### 3. Jobs to be Done (JTBD)
+- Job Statement: "When [situation], I want to [motivation], so I can [outcome]"
+- Functional Jobs (practical tasks)
+- Emotional Jobs (feelings sought)
+- Social Jobs (how they want to be perceived)
+- Hiring Criteria (why they'd choose your solution)
+
+### 4. Empathy Map
+- **Says** - Direct quotes
+- **Thinks** - Internal thoughts
+- **Does** - Observable actions
+- **Feels** - Emotional state
+- **Pains** - Frustrations, fears
+- **Gains** - Wants, needs, success measures
+
+## Key Components
+
+- **Persona cards** - Avatar, demographics, goals, pain points
+- **Journey grid** - Stage columns × aspect rows
+- **JTBD cards** - Statement + functional/emotional/social
+- **Empathy quadrants** - 2x2 + pains/gains
+
+## Output
+
+Save to: `./outputs/[project]-user-research.html`
