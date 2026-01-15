@@ -10,7 +10,7 @@ Eagle Docs is a Claude Code plugin that generates beautiful, consistent HTML doc
 
 - **4 Design Themes** — Brutalist, Material 3, Cupertino, Modern Minimal
 - **Custom Brand Colors** — Use your own color palette
-- **11 Document Types** — PRDs, wireframes, API docs, technical specs, and more
+- **16 Document Types** — PRDs, roadmaps, SWOT, business canvases, and more
 - **Self-Contained HTML** — No build step, open in any browser
 - **Marketplace Ready** — Install via Claude Code plugin system
 
@@ -30,8 +30,6 @@ Eagle Docs is a Claude Code plugin that generates beautiful, consistent HTML doc
 
 ### Manual Installation
 
-Clone into your Claude Code skills directory:
-
 ```bash
 # User-level (available in all projects)
 git clone https://github.com/eagleisbatman/eagle-docs.git ~/.claude/skills/eagle-docs
@@ -49,14 +47,14 @@ git clone https://github.com/eagleisbatman/eagle-docs.git .claude/skills/eagle-d
 ### Example
 
 ```
-Create a PRD for a habit tracking mobile app.
+Create a SWOT analysis for our mobile app launch.
 
 Context:
-- Mobile app for iOS and Android
-- Target users: Young professionals wanting to build better habits
+- Fintech startup entering payments space
+- Competing with established players
 
-Theme: Cupertino
-Primary color: #5856D6
+Theme: Modern Minimal
+Primary color: #2563EB
 ```
 
 ---
@@ -78,54 +76,71 @@ mode: light  # light | dark
 
 ---
 
-## Available Skills
+## Available Skills (16)
 
-### Product & Planning
-| Skill | Purpose | Best For |
-|-------|---------|----------|
-| **PRD Design** | Product Requirements Documents | PMs, engineers understanding scope |
-| **Launch Playbook Design** | Go-to-market & release planning | PMs, release managers |
+### Product Management
+| Skill | Includes |
+|-------|----------|
+| **PRD Design** | Product Requirements Documents |
+| **Roadmap Design** | Timeline, Now/Next/Later, Theme-based, Release roadmaps |
+| **Prioritization Framework** | RICE, MoSCoW, ICE, Value/Effort Matrix, Kano Model |
+| **Launch Playbook** | Go-to-market planning, release checklists |
+
+### Strategy & Analysis
+| Skill | Includes |
+|-------|----------|
+| **Strategic Analysis** | PESTEL, SWOT, Porter's Five Forces, Competitive Analysis |
+| **Business Canvas** | Business Model Canvas, Lean Canvas, Value Proposition Canvas |
+| **Analytics Design** | Event tracking, KPI frameworks, funnel analysis |
+
+### User Research
+| Skill | Includes |
+|-------|----------|
+| **User Research** | Personas, Journey Maps, JTBD, Empathy Maps |
 
 ### Design & UI
-| Skill | Purpose | Best For |
-|-------|---------|----------|
-| **Wireframe Design** | Low-fidelity UI mockups | Designers, PMs, engineers |
+| Skill | Purpose |
+|-------|---------|
+| **Wireframe Design** | Low-fidelity UI mockups |
 
 ### Technical Documentation
-| Skill | Purpose | Best For |
-|-------|---------|----------|
-| **Technical Spec Design** | Engineering specs, system design | Engineers, architects |
-| **API Spec Design** | REST API documentation | Backend engineers, integrators |
-| **Database Schema Design** | ERD diagrams & table definitions | DBAs, backend engineers |
-| **Infrastructure Design** | Architecture & deployment docs | DevOps, SREs |
-
-### Analytics & Data
-| Skill | Purpose | Best For |
-|-------|---------|----------|
-| **Analytics Design** | Event tracking & KPI frameworks | Data engineers, growth teams |
+| Skill | Purpose |
+|-------|---------|
+| **Technical Spec** | Engineering specs, system design, RFCs |
+| **API Spec Design** | REST API documentation |
+| **Database Schema** | ERD diagrams, table definitions |
+| **Infrastructure Design** | Architecture, deployment docs |
 
 ### User-Facing Documentation
-| Skill | Purpose | Best For |
-|-------|---------|----------|
-| **User Guide Design** | Help docs, tutorials, how-tos | Technical writers, PMs |
-| **Release Notes Design** | Changelogs, version history | PMs, engineers |
-| **Onboarding Docs Design** | New hire guides, setup docs | Engineering leads, HR |
+| Skill | Purpose |
+|-------|---------|
+| **User Guide** | Help docs, tutorials, how-tos |
+| **Release Notes** | Changelogs, version history |
+| **Onboarding Docs** | New hire guides, setup docs |
 
 ---
 
 ## Design Themes
 
-### Brutalist
-Bold black-and-white with harsh shadows. Technical, developer-focused aesthetic.
+| Theme | Style | Best For |
+|-------|-------|----------|
+| **Brutalist** | Bold black-and-white, harsh shadows | Developer docs, technical specs |
+| **Material 3** | Rounded corners, elevation shadows | Apps, SaaS products |
+| **Cupertino** | Subtle gradients, system fonts | iOS/macOS apps, premium products |
+| **Modern Minimal** | Clean lines, whitespace | Startups, modern brands |
 
-### Material 3
-Google's Material Design 3. Rounded corners, elevation shadows, systematic spacing.
+---
 
-### Cupertino
-Apple Human Interface Guidelines aesthetic. Subtle gradients, system fonts, refined.
+## Who Is This For?
 
-### Modern Minimal
-Clean lines, generous whitespace, contemporary feel. Perfect for startups.
+- **Product Managers** — PRDs, roadmaps, prioritization, canvases, analytics
+- **Strategists** — SWOT, PESTEL, competitive analysis, business models
+- **UX Researchers** — Personas, journey maps, JTBD, empathy maps
+- **Software Engineers** — Technical specs, API docs, database schemas
+- **Designers** — Wireframes, UI specifications
+- **DevOps/SRE** — Infrastructure documentation
+- **Technical Writers** — User guides, release notes, help docs
+- **Startup Founders** — All of the above, without hiring specialists
 
 ---
 
@@ -134,35 +149,40 @@ Clean lines, generous whitespace, contemporary feel. Perfect for startups.
 ```
 eagle-docs/
 ├── .claude-plugin/
-│   └── plugin.json              # Plugin manifest
+│   └── plugin.json
 ├── README.md
-├── QUICK-START.md               # Copy-paste prompts
+├── QUICK-START.md
 ├── shared/
-│   └── DESIGN-SYSTEM.md         # Theme specifications
+│   └── DESIGN-SYSTEM.md
+│
+├── # Product Management
 ├── prd-design/
-├── wireframe-design/
-├── database-schema-design/
-├── api-spec-design/
-├── infrastructure-design/
-├── analytics-design/
+├── roadmap-design/
+├── prioritization-framework-design/
 ├── launch-playbook-design/
+│
+├── # Strategy & Analysis
+├── strategic-analysis-design/
+├── business-canvas-design/
+├── analytics-design/
+│
+├── # User Research
+├── user-research-design/
+│
+├── # Design
+├── wireframe-design/
+│
+├── # Technical
 ├── technical-spec-design/
+├── api-spec-design/
+├── database-schema-design/
+├── infrastructure-design/
+│
+├── # User-Facing
 ├── user-guide-design/
 ├── release-notes-design/
 └── onboarding-docs-design/
 ```
-
----
-
-## Who Is This For?
-
-- **Product Managers** — PRDs, launch playbooks, analytics specs
-- **Software Engineers** — Technical specs, API docs, database schemas
-- **Designers** — Wireframes, UI specifications
-- **DevOps/SRE** — Infrastructure documentation, runbooks
-- **Technical Writers** — User guides, release notes, help docs
-- **Engineering Leads** — Onboarding docs, team handbooks
-- **Startup Founders** — Professional docs without hiring a documentation team
 
 ---
 

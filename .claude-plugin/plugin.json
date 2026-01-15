@@ -1,8 +1,8 @@
 {
   "name": "eagle-docs",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "displayName": "Eagle Docs",
-  "description": "Professional documentation templates for modern teams. Generate PRDs, wireframes, API docs, database schemas, and more with customizable themes.",
+  "description": "Professional documentation templates for modern teams. Generate PRDs, wireframes, API docs, roadmaps, SWOT analysis, business canvases, and more with customizable themes.",
   "author": {
     "name": "Gautam Mandewalker",
     "url": "https://github.com/eagleisbatman"
@@ -16,7 +16,13 @@
     "api-docs",
     "database-schema",
     "templates",
-    "technical-writing"
+    "technical-writing",
+    "product-management",
+    "roadmap",
+    "swot",
+    "pestel",
+    "business-canvas",
+    "user-research"
   ],
   "skills": [
     "prd-design",
@@ -29,6 +35,11 @@
     "technical-spec-design",
     "user-guide-design",
     "release-notes-design",
-    "onboarding-docs-design"
+    "onboarding-docs-design",
+    "prioritization-framework-design",
+    "business-canvas-design",
+    "strategic-analysis-design",
+    "user-research-design",
+    "roadmap-design"
   ]
 }

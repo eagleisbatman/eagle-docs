@@ -395,6 +395,168 @@ Primary color: #1976D2
 
 ---
 
+## Product Management Frameworks
+
+### Prioritization Framework (RICE, MoSCoW, etc.)
+
+```
+Create a prioritization framework for [your backlog/features].
+
+Framework: [RICE / MoSCoW / ICE / Value-Effort Matrix / Kano]
+
+Items to prioritize:
+- [Feature 1]
+- [Feature 2]
+- [Feature 3]
+
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create a RICE scoring prioritization for our Q2 feature backlog.
+
+Framework: RICE
+
+Items to prioritize:
+- Dark mode support
+- Social sharing features
+- Offline mode
+- Advanced search filters
+- Push notifications
+- Multi-language support
+
+Theme: Modern Minimal
+Primary color: #18181B
+```
+
+---
+
+### Business Canvas
+
+```
+Create a [Business Model Canvas / Lean Canvas / Value Proposition Canvas] for [company/product].
+
+Context:
+- [Brief description]
+- [Target market]
+- [Key differentiator]
+
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create a Lean Canvas for a B2B SaaS analytics platform.
+
+Context:
+- Self-serve analytics for small businesses
+- Target market: SMBs with 10-100 employees
+- Key differentiator: No-code dashboard builder
+
+Theme: Material 3
+Primary color: #1976D2
+```
+
+---
+
+### Strategic Analysis (SWOT, PESTEL, Porter's)
+
+```
+Create a [SWOT / PESTEL / Porter's Five Forces / Competitive Analysis] for [company/product].
+
+Context:
+- Industry: [industry]
+- Market position: [description]
+- Key competitors: [list]
+
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create a SWOT analysis for our fintech startup.
+
+Context:
+- Industry: Digital payments
+- Market position: New entrant in peer-to-peer payments
+- Key competitors: Venmo, Cash App, Zelle
+
+Theme: Brutalist
+```
+
+---
+
+### User Research (Personas, Journey Maps, JTBD)
+
+```
+Create [user personas / journey map / JTBD / empathy map] for [product/service].
+
+User segment: [description]
+Research basis: [interviews, surveys, data]
+
+Include:
+- [Specific elements to cover]
+
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create user personas for a fitness tracking app.
+
+User segments:
+1. Casual fitness enthusiast (walks, light workouts)
+2. Serious athlete (training plans, competitions)
+3. Health-conscious professional (busy schedule, desk job)
+
+Include: Demographics, goals, pain points, behaviors, tech savviness
+Theme: Cupertino
+Primary color: #007AFF
+```
+
+---
+
+### Product Roadmap
+
+```
+Create a [timeline / now-next-later / theme-based / release] roadmap for [product].
+
+Time horizon: [e.g., Q1-Q4 2025]
+Teams/Themes: [list]
+
+Key initiatives:
+- [Initiative 1]
+- [Initiative 2]
+
+Theme: [brutalist/material/cupertino/minimal]
+```
+
+**Example:**
+```
+Create a Now/Next/Later roadmap for our mobile app.
+
+Time horizon: Next 6 months
+
+Now (committed):
+- Performance optimization
+- Bug fixes from v2.0 launch
+
+Next (planned):
+- Dark mode
+- Social features
+- Widget support
+
+Later (exploratory):
+- AI recommendations
+- Wearable integration
+
+Theme: Material 3
+Primary color: #2563EB
+```
+
+---
+
 ## Plan Mode Workflow
 
 For complex documents, use plan mode for better results:
